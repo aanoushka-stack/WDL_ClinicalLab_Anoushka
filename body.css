@@ -1,0 +1,97 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f2;
+    margin: 20px;
+    color: #333333;
+}
+
+h1 {
+    color: #cc0066;
+}
+
+h2 {
+    color: #cc0066;
+}
+
+h3 {
+    color: #cc0066;
+}
+
+
+
+.sidebar {
+    width: 220px;
+    border: 2px solid #cc6699;
+    background-color: #fff0f5;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(204, 0, 102, 0.2);
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.sidebar a:hover {
+    background-color: #ffb6d9;
+    color: #cc0066;
+}
+
+
+
+.test-card {
+    width: 220px;
+    margin: 15px;
+    padding: 20px;
+    border: 2px solid #cc6699;
+    background-color: white;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+footer {
+    text-align: center;
+    background-color: #fff0f5;
+    color: #cc0066;
+    padding: 15px;
+    margin-top: 20px;
+    border-top: 2px solid #cc6699;
+}
+
+.offer {
+    background-color: #ffb6d9;
+    color: #99004d;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #cc0066;
+    text-shadow: 1px 1px 2px white;
+    animation: glow 1.5s infinite;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px #cc0066;
+    }
+
+    50% {
+        box-shadow: 0 0 20px #cc0066;
+    }
+
+    100% {
+        box-shadow: 0 0 5px #cc0066;
+    }
+}

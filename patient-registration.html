@@ -1,4 +1,182 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><title>Patient Registration</title></head>
-<body style="background-color:#ffe6f2; font-family:Arial, sans-serif; margin:20px;"><header style="text-align:center;"><h1 style="color:#cc0066;">Anoushka's Clinical Laboratory</h1><p><b>Accurate Diagnostics for Better Healthcare</b></p><hr></header>
-<table width="100%"><tr><td width="20%" valign="top"><nav style="width:220px; border:2px solid #cc6699; background-color:#fff0f5; padding:15px; border-radius:10px;"><h3 style="text-align:center; color:#cc0066;">📋 Menu</h3><a href="index.html" style="display:block; padding:8px; color:black; text-decoration:none;">🏠 Home</a><a href="laboratory-tests.html" style="display:block; padding:8px; color:black; text-decoration:none;">🧪 Laboratory Tests</a><a href="health-packages.html" style="display:block; padding:8px; color:black; text-decoration:none;">📦 Health Packages</a><a href="gallery.html" style="display:block; padding:8px; color:black; text-decoration:none;">🖼️ Gallery</a><a href="patient-registration.html" style="display:block; padding:8px; color:black; text-decoration:none;">📝 Online Registration</a><a href="reports.html" style="display:block; padding:8px; color:black; text-decoration:none;">📄 Reports</a><a href="health-information.html" style="display:block; padding:8px; color:black; text-decoration:none;">🌐 Health Information</a><a href="media.html" style="display:block; padding:8px; color:black; text-decoration:none;">🎥 Multimedia</a><a href="contact.html" style="display:block; padding:8px; color:black; text-decoration:none;">📞 Contact Us</a></nav></td><td valign="top" style="padding-left:35px;"><h2 style="color:#cc0066;">Online Patient Registration</h2><form><fieldset style="background-color:white; border:2px solid #cc6699; border-radius:8px; padding:20px;"><legend><b>Patient Registration Form</b></legend><label>Patient Name:</label><br><input type="text" placeholder="Enter your name" required autofocus><br><br><label>Age:</label><br><input type="number" min="1" max="120" required><br><br><label>Gender:</label><br><input type="radio" name="gender" required> Male <input type="radio" name="gender"> Female <input type="radio" name="gender"> Other<br><br><label>Mobile Number:</label><br><input type="tel" placeholder="9876543210" pattern="[0-9]{10}" required><br><br><label>Email:</label><br><input type="email" placeholder="abc@gmail.com" required><br><br><label>Date of Birth:</label><br><input type="date" required><br><br><label>Select Test:</label><br><select required><option value="">--Select Test--</option><option>Complete Blood Count (CBC)</option><option>Blood Sugar Test</option><option>Liver Function Test (LFT)</option><option>Kidney Function Test (KFT)</option><option>Urine Analysis</option></select><br><br><label>Preferred Appointment Date:</label><br><input type="date" required><br><br><label>Sample Collection:</label><br><input type="radio" name="sample" required> Laboratory <input type="radio" name="sample"> Home Collection<br><br><label>Upload Prescription:</label><br><input type="file"><br><br><input type="submit" value="Register" style="background-color:#cc0066; color:white; border:none; padding:8px 18px; border-radius:5px;"><input type="reset" value="Reset" style="background-color:#999999; color:white; border:none; padding:8px 18px; border-radius:5px;"></fieldset></form></td></tr></table><hr><footer style="text-align:center;"><p>&copy; 2026 Anoushka's Clinical Laboratory. All Rights Reserved.</p></footer></body></html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Patient Registration</title>
+
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body style="background-color:#ffe6f2; font-family:Arial, sans-serif; margin:20px;">
+
+
+    <header style="text-align:center;">
+        <h1 style="color:#cc0066;">Anoushka's Clinical Laboratory</h1>
+        <p><b>Accurate Diagnostics for Better Healthcare</b></p>
+        <hr>
+    </header>
+
+
+    <table width="100%">
+
+        <tr>
+
+            <td width="20%" valign="top">
+
+               <nav style="width:220px;
+            border:2px solid #cc6699;
+            background-color:#fff0f5;
+            padding:15px;
+            border-radius:10px;">
+
+    <h3 style="text-align:center; color:#cc0066;">📋 Menu</h3>
+
+    <a href="index.html"
+        style="display:block; padding:8px; color:black; text-decoration:none;">
+        🏠 Home
+    </a>
+
+    <a href="laboratory-tests.html"
+        style="display:block; padding:8px; color:black; text-decoration:none;">
+        🧪 Laboratory Tests
+    </a>
+
+    <a href="test-price-table.html"
+        style="display:block; padding:8px; color:black; text-decoration:none;">
+        📦 Health Packages
+    </a>
+
+    <a href="gallery.html"
+        style="display:block; padding:8px; color:black; text-decoration:none;">
+        🖼️ Gallery
+    </a>
+
+    <a href="patient-registration.html"
+        style="display:block; padding:8px; color:black; text-decoration:none;">
+        📝 Online Registration
+    </a>
+
+    <a href="reports.html"
+        style="display:block; padding:8px; color:black; text-decoration:none;">
+        📄 Reports
+    </a>
+
+    <a href="health-information.html"
+        style="display:block; padding:8px; color:black; text-decoration:none;">
+        🌐 Health Information
+    </a>
+
+    <a href="media.html"
+        style="display:block; padding:8px; color:black; text-decoration:none;">
+        🎥 Multimedia
+    </a>
+
+    <a href="contact.html"
+        style="display:block; padding:8px; color:black; text-decoration:none;">
+        📞 Contact Us
+    </a>
+
+</nav>
+
+            </td>
+
+            <td valign="top" style="padding-left:35px;">
+
+                <h2 style="color:#cc0066;">Online Patient Registration</h2>
+
+                <form>
+
+                    <fieldset style="background-color:white;
+                                     border:2px solid #cc6699;
+                                     border-radius:8px;
+                                     padding:20px;">
+
+                        <legend>Patient Registration Form</legend>
+
+                        <label>Patient Name:</label><br>
+                        <input type="text" placeholder="Enter your name" required autofocus>
+                        <br><br>
+
+                        <label>Age:</label><br>
+                        <input type="number" min="1" max="120" required>
+                        <br><br>
+
+                        <label>Gender:</label><br>
+
+                        <input type="radio" name="gender" required> Male
+                        <input type="radio" name="gender"> Female
+                        <input type="radio" name="gender"> Other
+
+                        <br><br>
+
+                        <label>Mobile Number:</label><br>
+                        <input type="tel"
+                               placeholder="9876543210"
+                               pattern="[0-9]{10}"
+                               required>
+                        <br><br>
+
+                        <label>Email:</label><br>
+                        <input type="email"
+                               placeholder="abc@gmail.com"
+                               required>
+                        <br><br>
+
+                        <label>Date of Birth:</label><br>
+                        <input type="date" required>
+                        <br><br>
+
+                        <label>Select Test:</label><br>
+
+                        <select required>
+
+                            <option value="">--Select Test--</option>
+                            <option>Complete Blood Count (CBC)</option>
+                            <option>Blood Sugar Test</option>
+                            <option>Liver Function Test (LFT)</option>
+                            <option>Kidney Function Test (KFT)</option>
+                            <option>Urine Analysis</option>
+
+                        </select>
+
+                        <br><br>
+
+                        <label>Preferred Appointment Date:</label><br>
+                        <input type="date" required>
+                        <br><br>
+
+                        <label>Sample Collection:</label><br>
+
+                        <input type="radio" name="sample" required> Laboratory
+                        <input type="radio" name="sample"> Home Collection
+
+                        <br><br>
+
+                        <label>Upload Prescription:</label><br>
+                        <input type="file">
+                        <br><br>
+
+                        <input type="submit" value="Register">
+
+                        <input type="reset" value="Reset">
+
+                    </fieldset>
+
+                </form>
+
+            </td>
+
+        </tr>
+
+    </table>
+
+    <hr>
+
+    <footer style="text-align:center;">
+        <p>&copy; 2026 Anoushka's Clinical Laboratory. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
